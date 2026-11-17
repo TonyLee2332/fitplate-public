@@ -1,0 +1,8 @@
+.venv/
+.venv.backup-*/
+__pycache__/
+.pytest_cache/
+.streamlit/secrets.toml
+/data/
+artifacts/
+/models/
