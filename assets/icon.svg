@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+<defs>
+ <linearGradient id="glass" x1="8" y1="6" x2="55" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".74"/><stop offset=".5" stop-color="#f4f3ee" stop-opacity=".28"/><stop offset="1" stop-color="#dcddd6" stop-opacity=".32"/></linearGradient>
+ <linearGradient id="edge" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".8"/><stop offset=".45" stop-color="#b8b9ad" stop-opacity=".3"/><stop offset="1" stop-color="#fff" stop-opacity=".6"/></linearGradient>
+ <linearGradient id="metal" x1="17" y1="20" x2="46" y2="49" gradientUnits="userSpaceOnUse"><stop stop-color="#555c56"/><stop offset=".55" stop-color="#777761"/><stop offset="1" stop-color="#9a7941"/></linearGradient>
+</defs>
+<rect x="5" y="5" width="54" height="54" rx="11" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.5"/>
+<rect x="14" y="10" width="40" height="40" rx="7" fill="#c4b38d" fill-opacity=".06" stroke="#b6a27d" stroke-opacity=".18"/>
+<rect x="10" y="14" width="40" height="40" rx="7" fill="#fff" fill-opacity=".18" stroke="#fff" stroke-opacity=".58"/>
+<path d="M18 23h25v6H25v5h14v6H25v9h-7V23Z" fill="url(#metal)"/>
+<rect x="39" y="42" width="7" height="7" rx="1.3" fill="#a28046"/>
+<path d="M13 18h31M13 18v25" stroke="#fff" stroke-opacity=".48" stroke-linecap="round"/>
+</svg>

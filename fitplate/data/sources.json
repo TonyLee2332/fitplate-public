@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-14",
+  "rows": 17382,
+  "counts": {
+    "USDA": 7793,
+    "UK": 2311,
+    "AU": 1588,
+    "CA": 5690
+  },
+  "sha256": "5a61ea6e9cab8fa55cbab95dae491901e0af919541b9cccd49677668c35f0b5d",
+  "sources": {
+    "USDA": {
+      "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip",
+      "version": "SR Legacy April 2018; FDC publication 2019-04-01",
+      "file": "usda_sr_legacy_2018.zip",
+      "sha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0"
+    },
+    "UK": {
+      "url": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+      "version": "CoFID 2021",
+      "file": "cofid2021.xlsx",
+      "sha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d"
+    },
+    "AU": {
+      "url": "https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Nutrient%20profiles.xlsx",
+      "version": "AFCD Release 3 (December 2025)",
+      "file": "afcd_profiles.xlsx",
+      "sha256": "14cb3e73dbf58987b440e6299624c0fefd7a4e61591fc1f753995d9534e0efc9"
+    },
+    "CA": {
+      "url": "https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/fn-an/alt_formats/zip/nutrition/fiche-nutri-data/cnf-fcen-csv.zip",
+      "version": "Canadian Nutrient File 2015 (archived edition)",
+      "file": "cnf2015.zip",
+      "sha256": "fb77503d88186844cc2c27b39432d755505f97a789c97fc5973a30d0cd4b0367"
+    }
+  },
+  "supporting_files": {
+    "afcd_details.xlsx": "69aa096c45cb0699db60a9c544442312e9ff09af587b99c42dc78bc26f689629"
+  },
+  "excluded_count": 576,
+  "rules": "No missing/trace imputation; no cross-source nutrient blending; full precision; distinct carbohydrate definitions retained."
+}

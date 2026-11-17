@@ -1,0 +1,1591 @@
+{
+  "version": "FitPlate recipe scenarios v1.0, 2026-11-15",
+  "status": "Editable illustrative recipes, not measured or validated standard Chinese recipes",
+  "method_reference": "https://www.fao.org/4/y4705e/y4705e23.htm",
+  "ingredients": {
+    "rice": 1169757,
+    "brown_rice": 1169704,
+    "chicken": 1171477,
+    "chicken_boiled": 1171478,
+    "pork": 1168233,
+    "pork_fatty": 1168373,
+    "beef": 1171794,
+    "lamb": 1172487,
+    "egg": 1173424,
+    "tofu": 1172475,
+    "pepper": 1170428,
+    "spinach": 1168463,
+    "noodles": 1168926,
+    "rice_noodles": 1168914,
+    "broth": 1171538,
+    "soy": 1174277,
+    "water": 1173647,
+    "oil": 1171413,
+    "shrimp": 1175180,
+    "cabbage": 1169976,
+    "napa": 1169980,
+    "bok_choy": 1170391,
+    "mushroom": 1169252,
+    "shiitake": 1168437,
+    "carrot": 1170394,
+    "corn": 1169999,
+    "fish": 1175177,
+    "cod": 1171956,
+    "beans": 1169141,
+    "potato": 1170440,
+    "tomato": 1170050,
+    "cucumber": 1168409,
+    "eggplant": 1169229,
+    "onion": 1170001,
+    "duck": 1172411,
+    "flour": 1169761,
+    "sugar": 1169655,
+    "starch": 1169698,
+    "peanut": 1173806,
+    "sprouts": 1169137,
+    "edamame": 1168411,
+    "bamboo": 1169211,
+    "broccoli": 1169967,
+    "beef_fatty": 1171799,
+    "lamb_fatty": 1172485
+  },
+  "recipes": [
+    {
+      "key": "rice",
+      "name": "Cooked white rice",
+      "aliases": [
+        "Cooked white rice",
+        "米饭",
+        "Regular rice",
+        "Steamed rice",
+        "白饭",
+        "白飯",
+        "米飯",
+        "Rice",
+        "White rice"
+      ],
+      "ingredients": {
+        "rice": 1
+      },
+      "default_grams": 150,
+      "default_unit": "serving",
+      "kind": "single",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "brown_rice",
+      "name": "Cooked brown rice",
+      "aliases": [
+        "Cooked brown rice",
+        "糙米饭",
+        "Brown rice"
+      ],
+      "ingredients": {
+        "brown_rice": 1
+      },
+      "default_grams": 150,
+      "default_unit": "serving",
+      "kind": "single",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "spinach",
+      "name": "Boiled spinach",
+      "aliases": [
+        "Boiled spinach",
+        "水煮菠菜",
+        "Blanched spinach",
+        "菠菜",
+        "清水菠菜",
+        "Spinach"
+      ],
+      "ingredients": {
+        "spinach": 1
+      },
+      "default_grams": 150,
+      "default_unit": "serving",
+      "kind": "single",
+      "oil_sensitive": false,
+      "drain_sensitive": true,
+      "notes": ""
+    },
+    {
+      "key": "broccoli",
+      "name": "Boiled broccoli",
+      "aliases": [
+        "Boiled broccoli",
+        "水煮西兰花",
+        "Broccoli"
+      ],
+      "ingredients": {
+        "broccoli": 1
+      },
+      "default_grams": 150,
+      "default_unit": "serving",
+      "kind": "single",
+      "oil_sensitive": false,
+      "drain_sensitive": true,
+      "notes": ""
+    },
+    {
+      "key": "bok_choy",
+      "name": "Blanched bok choy",
+      "aliases": [
+        "Blanched bok choy",
+        "白灼小白菜"
+      ],
+      "ingredients": {
+        "bok_choy": 1
+      },
+      "default_grams": 150,
+      "default_unit": "serving",
+      "kind": "single",
+      "oil_sensitive": false,
+      "drain_sensitive": true,
+      "notes": ""
+    },
+    {
+      "key": "napa",
+      "name": "Boiled napa cabbage",
+      "aliases": [
+        "Boiled napa cabbage",
+        "水煮白菜"
+      ],
+      "ingredients": {
+        "napa": 1
+      },
+      "default_grams": 150,
+      "default_unit": "serving",
+      "kind": "single",
+      "oil_sensitive": false,
+      "drain_sensitive": true,
+      "notes": ""
+    },
+    {
+      "key": "chicken",
+      "name": "Chicken breast",
+      "aliases": [
+        "Chicken breast",
+        "鸡胸肉"
+      ],
+      "ingredients": {
+        "chicken": 1
+      },
+      "default_grams": 150,
+      "default_unit": "serving",
+      "kind": "single",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "tofu",
+      "name": "Plain tofu",
+      "aliases": [
+        "Plain tofu",
+        "豆腐",
+        "Tofu",
+        "Firm tofu"
+      ],
+      "ingredients": {
+        "tofu": 1
+      },
+      "default_grams": 150,
+      "default_unit": "serving",
+      "kind": "single",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "egg",
+      "name": "Boiled egg",
+      "aliases": [
+        "Boiled egg",
+        "水煮蛋",
+        "Egg",
+        "Eggs"
+      ],
+      "ingredients": {
+        "egg": 1
+      },
+      "default_grams": 50,
+      "default_unit": "piece",
+      "kind": "single",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "spinach_stir",
+      "name": "Stir-fried spinach",
+      "aliases": [
+        "Stir-fried spinach",
+        "清炒菠菜"
+      ],
+      "ingredients": {
+        "spinach": 0.92,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 200,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "broccoli_stir",
+      "name": "Stir-fried broccoli",
+      "aliases": [
+        "Stir-fried broccoli",
+        "清炒西兰花"
+      ],
+      "ingredients": {
+        "broccoli": 0.92,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 200,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "cabbage_stir",
+      "name": "Stir-fried cabbage",
+      "aliases": [
+        "Stir-fried cabbage",
+        "手撕包菜"
+      ],
+      "ingredients": {
+        "cabbage": 0.92,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 200,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "bok_choy_stir",
+      "name": "Stir-fried bok choy",
+      "aliases": [
+        "Stir-fried bok choy",
+        "清炒小白菜"
+      ],
+      "ingredients": {
+        "bok_choy": 0.92,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 200,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "green_beans",
+      "name": "Stir-fried green beans",
+      "aliases": [
+        "Stir-fried green beans",
+        "干煸四季豆"
+      ],
+      "ingredients": {
+        "beans": 0.92,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 200,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "eggplant",
+      "name": "Braised eggplant",
+      "aliases": [
+        "Braised eggplant",
+        "红烧茄子"
+      ],
+      "ingredients": {
+        "eggplant": 0.92,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 200,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "potato_shreds",
+      "name": "Stir-fried potato shreds",
+      "aliases": [
+        "Stir-fried potato shreds",
+        "酸辣土豆丝"
+      ],
+      "ingredients": {
+        "potato": 0.92,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 200,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "sprouts",
+      "name": "Stir-fried bean sprouts",
+      "aliases": [
+        "Stir-fried bean sprouts",
+        "清炒豆芽"
+      ],
+      "ingredients": {
+        "sprouts": 0.92,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 200,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "mushrooms",
+      "name": "Stir-fried mushrooms",
+      "aliases": [
+        "Stir-fried mushrooms",
+        "清炒蘑菇"
+      ],
+      "ingredients": {
+        "mushroom": 0.92,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 200,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "bamboo",
+      "name": "Stir-fried bamboo shoots",
+      "aliases": [
+        "Stir-fried bamboo shoots",
+        "清炒竹笋"
+      ],
+      "ingredients": {
+        "bamboo": 0.92,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 200,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "pork_peppers",
+      "name": "Stir-fried pork with chili peppers",
+      "aliases": [
+        "Stir-fried pork with chili peppers",
+        "青椒炒肉",
+        "Pork with chili peppers",
+        "Chili pork",
+        "辣椒炒肉",
+        "小炒肉",
+        "青椒肉丝",
+        "青椒炒肉絲"
+      ],
+      "ingredients": {
+        "pork": 0.55,
+        "pepper": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "pork_leeks",
+      "name": "Pork with onions",
+      "aliases": [
+        "Pork with onions",
+        "洋葱炒肉"
+      ],
+      "ingredients": {
+        "pork": 0.55,
+        "onion": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "pork_mushrooms",
+      "name": "Pork with mushrooms",
+      "aliases": [
+        "Pork with mushrooms",
+        "蘑菇炒肉"
+      ],
+      "ingredients": {
+        "pork": 0.55,
+        "mushroom": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "pork_cabbage",
+      "name": "Pork with cabbage",
+      "aliases": [
+        "Pork with cabbage",
+        "白菜炒肉"
+      ],
+      "ingredients": {
+        "pork": 0.55,
+        "napa": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "beef_peppers",
+      "name": "Stir-fried beef with peppers",
+      "aliases": [
+        "Stir-fried beef with peppers",
+        "青椒牛肉"
+      ],
+      "ingredients": {
+        "beef": 0.55,
+        "pepper": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "beef_onions",
+      "name": "Beef with onions",
+      "aliases": [
+        "Beef with onions",
+        "洋葱牛肉"
+      ],
+      "ingredients": {
+        "beef": 0.55,
+        "onion": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "beef_broccoli",
+      "name": "Beef with broccoli",
+      "aliases": [
+        "Beef with broccoli",
+        "西兰花牛肉"
+      ],
+      "ingredients": {
+        "beef": 0.55,
+        "broccoli": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "chicken_peppers",
+      "name": "Chicken with peppers",
+      "aliases": [
+        "Chicken with peppers",
+        "青椒鸡丁"
+      ],
+      "ingredients": {
+        "chicken": 0.55,
+        "pepper": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "chicken_mushrooms",
+      "name": "Chicken with mushrooms",
+      "aliases": [
+        "Chicken with mushrooms",
+        "香菇鸡"
+      ],
+      "ingredients": {
+        "chicken": 0.55,
+        "shiitake": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "shrimp_broccoli",
+      "name": "Shrimp with broccoli",
+      "aliases": [
+        "Shrimp with broccoli",
+        "西兰花炒虾仁"
+      ],
+      "ingredients": {
+        "shrimp": 0.55,
+        "broccoli": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "shrimp_egg",
+      "name": "Shrimp with eggs",
+      "aliases": [
+        "Shrimp with eggs",
+        "虾仁炒蛋"
+      ],
+      "ingredients": {
+        "shrimp": 0.55,
+        "egg": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "fish_peppers",
+      "name": "Fish with peppers",
+      "aliases": [
+        "Fish with peppers",
+        "青椒鱼片"
+      ],
+      "ingredients": {
+        "fish": 0.55,
+        "pepper": 0.37,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "tomato_egg",
+      "name": "Scrambled eggs with tomato",
+      "aliases": [
+        "Scrambled eggs with tomato",
+        "番茄炒蛋",
+        "Tomato and eggs",
+        "西红柿炒鸡蛋",
+        "番茄炒雞蛋"
+      ],
+      "ingredients": {
+        "egg": 0.5,
+        "tomato": 0.45,
+        "oil": 0.03,
+        "soy": 0.02
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "mapo_tofu",
+      "name": "Mapo tofu",
+      "aliases": [
+        "Mapo tofu",
+        "麻婆豆腐"
+      ],
+      "ingredients": {
+        "tofu": 0.65,
+        "pork": 0.18,
+        "water": 0.09,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": "Firm tofu and plain cooked pork are composition proxies; chili paste is approximated by the sauce allowance."
+    },
+    {
+      "key": "tofu_mushrooms",
+      "name": "Braised tofu with mushrooms",
+      "aliases": [
+        "Braised tofu with mushrooms",
+        "香菇豆腐"
+      ],
+      "ingredients": {
+        "tofu": 0.65,
+        "mushroom": 0.27,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "tofu_vegetables",
+      "name": "Tofu with vegetables",
+      "aliases": [
+        "Tofu with vegetables",
+        "白菜炖豆腐"
+      ],
+      "ingredients": {
+        "tofu": 0.5,
+        "napa": 0.42,
+        "oil": 0.03,
+        "soy": 0.05
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "kung_pao_chicken",
+      "name": "Kung pao chicken",
+      "aliases": [
+        "Kung pao chicken",
+        "宫保鸡丁"
+      ],
+      "ingredients": {
+        "chicken": 0.5,
+        "pepper": 0.24,
+        "peanut": 0.1,
+        "oil": 0.05,
+        "soy": 0.06,
+        "sugar": 0.05
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "sweet_sour_pork",
+      "name": "Sweet and sour pork",
+      "aliases": [
+        "Sweet and sour pork",
+        "糖醋里脊"
+      ],
+      "ingredients": {
+        "pork": 0.6,
+        "starch": 0.08,
+        "oil": 0.07,
+        "soy": 0.05,
+        "sugar": 0.1,
+        "water": 0.1
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": "Coating, absorbed oil and sugar vary widely; this is not an analysed restaurant recipe."
+    },
+    {
+      "key": "braised_pork",
+      "name": "Braised pork",
+      "aliases": [
+        "Braised pork",
+        "红烧肉"
+      ],
+      "ingredients": {
+        "pork_fatty": 0.7,
+        "soy": 0.07,
+        "sugar": 0.06,
+        "water": 0.17
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": "Higher-fat cooked pork is a proxy for braised belly; confirm cut and visible fat."
+    },
+    {
+      "key": "lamb_skewers",
+      "name": "Lamb skewers",
+      "aliases": [
+        "Lamb skewers",
+        "羊肉串",
+        "Grilled lamb skewers",
+        "羊肉串儿"
+      ],
+      "ingredients": {
+        "lamb": 0.94,
+        "oil": 0.03,
+        "soy": 0.03
+      },
+      "default_grams": 30,
+      "default_unit": "piece",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "chicken_skewers",
+      "name": "Chicken skewers",
+      "aliases": [
+        "Chicken skewers",
+        "鸡肉串"
+      ],
+      "ingredients": {
+        "chicken": 0.94,
+        "oil": 0.03,
+        "soy": 0.03
+      },
+      "default_grams": 30,
+      "default_unit": "piece",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "beef_skewers",
+      "name": "Beef skewers",
+      "aliases": [
+        "Beef skewers",
+        "牛肉串"
+      ],
+      "ingredients": {
+        "beef": 0.94,
+        "oil": 0.03,
+        "soy": 0.03
+      },
+      "default_grams": 30,
+      "default_unit": "piece",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "egg_fried_rice",
+      "name": "Egg fried rice",
+      "aliases": [
+        "Egg fried rice",
+        "蛋炒饭"
+      ],
+      "ingredients": {
+        "rice": 0.65,
+        "egg": 0.2,
+        "carrot": 0.07,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "chicken_fried_rice",
+      "name": "Chicken fried rice",
+      "aliases": [
+        "Chicken fried rice",
+        "鸡肉炒饭"
+      ],
+      "ingredients": {
+        "rice": 0.65,
+        "chicken": 0.2,
+        "carrot": 0.07,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "beef_fried_rice",
+      "name": "Beef fried rice",
+      "aliases": [
+        "Beef fried rice",
+        "牛肉炒饭"
+      ],
+      "ingredients": {
+        "rice": 0.65,
+        "beef": 0.2,
+        "carrot": 0.07,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "shrimp_fried_rice",
+      "name": "Shrimp fried rice",
+      "aliases": [
+        "Shrimp fried rice",
+        "虾仁炒饭"
+      ],
+      "ingredients": {
+        "rice": 0.65,
+        "shrimp": 0.2,
+        "carrot": 0.07,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "pork_fried_rice",
+      "name": "Pork fried rice",
+      "aliases": [
+        "Pork fried rice",
+        "肉丝炒饭"
+      ],
+      "ingredients": {
+        "rice": 0.65,
+        "pork": 0.2,
+        "carrot": 0.07,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "yangzhou_fried_rice",
+      "name": "Yangzhou fried rice",
+      "aliases": [
+        "Yangzhou fried rice",
+        "扬州炒饭"
+      ],
+      "ingredients": {
+        "rice": 0.6,
+        "egg": 0.12,
+        "shrimp": 0.1,
+        "carrot": 0.05,
+        "corn": 0.05,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "mixed_noodles",
+      "name": "Mixed noodles",
+      "aliases": [
+        "Mixed noodles",
+        "拌面",
+        "Tossed noodles",
+        "拌麵"
+      ],
+      "ingredients": {
+        "noodles": 0.65,
+        "egg": 0.18,
+        "napa": 0.1,
+        "oil": 0.03,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "chicken_noodles",
+      "name": "Chicken noodles",
+      "aliases": [
+        "Chicken noodles",
+        "鸡丝面"
+      ],
+      "ingredients": {
+        "noodles": 0.65,
+        "chicken": 0.18,
+        "napa": 0.1,
+        "oil": 0.03,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "beef_noodles",
+      "name": "Beef noodles",
+      "aliases": [
+        "Beef noodles",
+        "牛肉面"
+      ],
+      "ingredients": {
+        "noodles": 0.65,
+        "beef": 0.18,
+        "napa": 0.1,
+        "oil": 0.03,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "pork_noodles",
+      "name": "Pork noodles",
+      "aliases": [
+        "Pork noodles",
+        "肉丝面"
+      ],
+      "ingredients": {
+        "noodles": 0.65,
+        "pork": 0.18,
+        "napa": 0.1,
+        "oil": 0.03,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "shrimp_noodles",
+      "name": "Shrimp noodles",
+      "aliases": [
+        "Shrimp noodles",
+        "虾仁面"
+      ],
+      "ingredients": {
+        "noodles": 0.65,
+        "shrimp": 0.18,
+        "napa": 0.1,
+        "oil": 0.03,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "fried_noodles",
+      "name": "Stir-fried noodles",
+      "aliases": [
+        "Stir-fried noodles",
+        "炒面",
+        "炒麵"
+      ],
+      "ingredients": {
+        "noodles": 0.68,
+        "cabbage": 0.16,
+        "egg": 0.08,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "rice_noodles",
+      "name": "Stir-fried rice noodles",
+      "aliases": [
+        "Stir-fried rice noodles",
+        "炒米粉"
+      ],
+      "ingredients": {
+        "rice_noodles": 0.68,
+        "sprouts": 0.16,
+        "egg": 0.08,
+        "oil": 0.04,
+        "soy": 0.04
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "beef_rice_noodles",
+      "name": "Beef rice noodles",
+      "aliases": [
+        "Beef rice noodles",
+        "干炒牛河"
+      ],
+      "ingredients": {
+        "rice_noodles": 0.6,
+        "beef": 0.23,
+        "sprouts": 0.1,
+        "oil": 0.04,
+        "soy": 0.03
+      },
+      "default_grams": 350,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "lamb_soup",
+      "name": "Lamb soup",
+      "aliases": [
+        "Lamb soup",
+        "羊肉汤",
+        "羊肉湯"
+      ],
+      "ingredients": {
+        "lamb": 0.12,
+        "broth": 0.48,
+        "water": 0.4
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": "Beef broth is a composition proxy for the liquid. Broth fat and solid-to-liquid ratio are uncertain; no bones are counted as edible meat."
+    },
+    {
+      "key": "beef_soup",
+      "name": "Beef soup",
+      "aliases": [
+        "Beef soup",
+        "牛肉汤"
+      ],
+      "ingredients": {
+        "beef": 0.12,
+        "broth": 0.48,
+        "water": 0.4
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": "Beef broth is a composition proxy for the liquid. Broth fat and solid-to-liquid ratio are uncertain; no bones are counted as edible meat."
+    },
+    {
+      "key": "chicken_soup",
+      "name": "Chicken soup",
+      "aliases": [
+        "Chicken soup",
+        "鸡汤"
+      ],
+      "ingredients": {
+        "chicken": 0.12,
+        "broth": 0.48,
+        "water": 0.4
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": "Beef broth is a composition proxy for the liquid. Broth fat and solid-to-liquid ratio are uncertain; no bones are counted as edible meat."
+    },
+    {
+      "key": "pork_soup",
+      "name": "Pork soup",
+      "aliases": [
+        "Pork soup",
+        "排骨汤"
+      ],
+      "ingredients": {
+        "pork": 0.12,
+        "broth": 0.48,
+        "water": 0.4
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": "Beef broth is a composition proxy for the liquid. Broth fat and solid-to-liquid ratio are uncertain; no bones are counted as edible meat."
+    },
+    {
+      "key": "fish_soup",
+      "name": "Fish soup",
+      "aliases": [
+        "Fish soup",
+        "鱼汤"
+      ],
+      "ingredients": {
+        "fish": 0.12,
+        "broth": 0.48,
+        "water": 0.4
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": "Beef broth is a composition proxy for the liquid. Broth fat and solid-to-liquid ratio are uncertain; no bones are counted as edible meat."
+    },
+    {
+      "key": "tomato_egg_soup",
+      "name": "Tomato egg soup",
+      "aliases": [
+        "Tomato egg soup",
+        "番茄蛋汤"
+      ],
+      "ingredients": {
+        "egg": 0.12,
+        "tomato": 0.2,
+        "water": 0.64,
+        "soy": 0.04
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "tofu_soup",
+      "name": "Tofu vegetable soup",
+      "aliases": [
+        "Tofu vegetable soup",
+        "豆腐青菜汤"
+      ],
+      "ingredients": {
+        "tofu": 0.2,
+        "napa": 0.1,
+        "broth": 0.3,
+        "water": 0.4
+      },
+      "default_grams": 250,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "chicken_rice_bowl",
+      "name": "Chicken rice bowl",
+      "aliases": [
+        "Chicken rice bowl",
+        "鸡肉盖饭"
+      ],
+      "ingredients": {
+        "rice": 0.6,
+        "chicken": 0.25,
+        "napa": 0.08,
+        "oil": 0.03,
+        "soy": 0.04
+      },
+      "default_grams": 400,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "beef_rice_bowl",
+      "name": "Beef rice bowl",
+      "aliases": [
+        "Beef rice bowl",
+        "牛肉盖饭"
+      ],
+      "ingredients": {
+        "rice": 0.6,
+        "beef": 0.25,
+        "napa": 0.08,
+        "oil": 0.03,
+        "soy": 0.04
+      },
+      "default_grams": 400,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "pork_rice_bowl",
+      "name": "Pork rice bowl",
+      "aliases": [
+        "Pork rice bowl",
+        "肉丝盖饭"
+      ],
+      "ingredients": {
+        "rice": 0.6,
+        "pork": 0.25,
+        "napa": 0.08,
+        "oil": 0.03,
+        "soy": 0.04
+      },
+      "default_grams": 400,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "tofu_rice_bowl",
+      "name": "Tofu rice bowl",
+      "aliases": [
+        "Tofu rice bowl",
+        "麻婆豆腐盖饭"
+      ],
+      "ingredients": {
+        "rice": 0.6,
+        "tofu": 0.25,
+        "napa": 0.08,
+        "oil": 0.03,
+        "soy": 0.04
+      },
+      "default_grams": 400,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "rice_congee",
+      "name": "Plain rice congee",
+      "aliases": [
+        "Plain rice congee",
+        "白粥"
+      ],
+      "ingredients": {
+        "rice": 0.22,
+        "water": 0.78
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "chicken_congee",
+      "name": "Chicken congee",
+      "aliases": [
+        "Chicken congee",
+        "鸡丝粥"
+      ],
+      "ingredients": {
+        "rice": 0.2,
+        "chicken": 0.1,
+        "water": 0.68,
+        "soy": 0.02
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "pork_congee",
+      "name": "Pork congee",
+      "aliases": [
+        "Pork congee",
+        "瘦肉粥"
+      ],
+      "ingredients": {
+        "rice": 0.2,
+        "pork": 0.1,
+        "water": 0.68,
+        "soy": 0.02
+      },
+      "default_grams": 300,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": ""
+    },
+    {
+      "key": "mantou",
+      "name": "Steamed wheat bun",
+      "aliases": [
+        "Steamed wheat bun",
+        "馒头",
+        "Mantou",
+        "饅頭"
+      ],
+      "ingredients": {
+        "flour": 0.6,
+        "water": 0.4
+      },
+      "default_grams": 80,
+      "default_unit": "piece",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": "Flour is an uncooked ingredient-equivalent; final water retention is a template assumption, not a measured yield."
+    },
+    {
+      "key": "pork_bao",
+      "name": "Steamed pork bun",
+      "aliases": [
+        "Steamed pork bun",
+        "猪肉包子"
+      ],
+      "ingredients": {
+        "flour": 0.35,
+        "water": 0.25,
+        "pork": 0.22,
+        "cabbage": 0.13,
+        "soy": 0.03,
+        "oil": 0.02
+      },
+      "default_grams": 80,
+      "default_unit": "piece",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": "Dough uses flour-equivalent and retained water; no measured cooking yield is available."
+    },
+    {
+      "key": "vegetable_bao",
+      "name": "Steamed vegetable bun",
+      "aliases": [
+        "Steamed vegetable bun",
+        "素菜包子"
+      ],
+      "ingredients": {
+        "flour": 0.35,
+        "water": 0.25,
+        "cabbage": 0.25,
+        "mushroom": 0.08,
+        "soy": 0.03,
+        "oil": 0.04
+      },
+      "default_grams": 80,
+      "default_unit": "piece",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": "Dough uses flour-equivalent and retained water; no measured cooking yield is available."
+    },
+    {
+      "key": "pork_dumplings",
+      "name": "Pork and cabbage dumplings",
+      "aliases": [
+        "Pork and cabbage dumplings",
+        "猪肉白菜饺子",
+        "Pork dumplings",
+        "水饺",
+        "水餃"
+      ],
+      "ingredients": {
+        "flour": 0.28,
+        "water": 0.25,
+        "pork": 0.25,
+        "cabbage": 0.18,
+        "soy": 0.04
+      },
+      "default_grams": 25,
+      "default_unit": "piece",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": "Wrapper uses flour-equivalent and retained water. Filling and wrapper ratios vary."
+    },
+    {
+      "key": "vegetable_dumplings",
+      "name": "Vegetable dumplings",
+      "aliases": [
+        "Vegetable dumplings",
+        "素饺子"
+      ],
+      "ingredients": {
+        "flour": 0.3,
+        "water": 0.25,
+        "cabbage": 0.25,
+        "mushroom": 0.1,
+        "oil": 0.04,
+        "soy": 0.06
+      },
+      "default_grams": 25,
+      "default_unit": "piece",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": "Wrapper uses flour-equivalent and retained water. Filling and wrapper ratios vary."
+    },
+    {
+      "key": "steamed_fish",
+      "name": "Steamed fish",
+      "aliases": [
+        "Steamed fish",
+        "清蒸鱼"
+      ],
+      "ingredients": {
+        "cod": 0.94,
+        "soy": 0.04,
+        "oil": 0.02
+      },
+      "default_grams": 200,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": true,
+      "drain_sensitive": false,
+      "notes": "Dry-heat cooked cod is a proxy for steamed fish; species and cooking moisture differ."
+    },
+    {
+      "key": "roast_duck",
+      "name": "Roast duck",
+      "aliases": [
+        "Roast duck",
+        "烧鸭"
+      ],
+      "ingredients": {
+        "duck": 0.96,
+        "soy": 0.04
+      },
+      "default_grams": 150,
+      "default_unit": "serving",
+      "kind": "recipe",
+      "oil_sensitive": false,
+      "drain_sensitive": false,
+      "notes": ""
+    }
+  ]
+}

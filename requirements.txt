@@ -1,0 +1,8 @@
+streamlit==1.67.0
+mutagen>=1.47,<2
+
+
+ingredient-parser-nlp==2.10.0
+
+transformers==4.57.6
+torch==2.15.0

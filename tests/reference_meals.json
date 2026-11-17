@@ -1,0 +1,542 @@
+[
+  {
+    "meal_name": "USDA 167512",
+    "items": [
+      {
+        "name": "Pillsbury Golden Layer Buttermilk Biscuits, Artificial Flavor, refrigerated dough [USDA 167512]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 307.0,
+        "protein": 5.88,
+        "carbs": 41.18,
+        "fat": 13.24
+      }
+    ],
+    "expected": {
+      "energy": 307.0,
+      "protein": 5.9,
+      "carbs": 41.2,
+      "fat": 13.2
+    },
+    "reference": {
+      "source_food_id": "167512",
+      "source_sha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
+      "source_sheet": "food.csv + food_nutrient.csv",
+      "source_row": "2"
+    }
+  },
+  {
+    "meal_name": "USDA 167513",
+    "items": [
+      {
+        "name": "Pillsbury, Cinnamon Rolls with Icing, refrigerated dough [USDA 167513]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 330.0,
+        "protein": 4.34,
+        "carbs": 53.42,
+        "fat": 11.27
+      }
+    ],
+    "expected": {
+      "energy": 330.0,
+      "protein": 4.3,
+      "carbs": 53.4,
+      "fat": 11.3
+    },
+    "reference": {
+      "source_food_id": "167513",
+      "source_sha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
+      "source_sheet": "food.csv + food_nutrient.csv",
+      "source_row": "3"
+    }
+  },
+  {
+    "meal_name": "USDA 167514",
+    "items": [
+      {
+        "name": "Kraft Foods, Shake N Bake Original Recipe, Coating for Pork, dry [USDA 167514]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 377.0,
+        "protein": 6.1,
+        "carbs": 79.8,
+        "fat": 3.7
+      }
+    ],
+    "expected": {
+      "energy": 377.0,
+      "protein": 6.1,
+      "carbs": 79.8,
+      "fat": 3.7
+    },
+    "reference": {
+      "source_food_id": "167514",
+      "source_sha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
+      "source_sheet": "food.csv + food_nutrient.csv",
+      "source_row": "4"
+    }
+  },
+  {
+    "meal_name": "USDA 167515",
+    "items": [
+      {
+        "name": "George Weston Bakeries, Thomas English Muffins [USDA 167515]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 232.0,
+        "protein": 8.0,
+        "carbs": 46.0,
+        "fat": 1.8
+      }
+    ],
+    "expected": {
+      "energy": 232.0,
+      "protein": 8.0,
+      "carbs": 46.0,
+      "fat": 1.8
+    },
+    "reference": {
+      "source_food_id": "167515",
+      "source_sha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
+      "source_sheet": "food.csv + food_nutrient.csv",
+      "source_row": "5"
+    }
+  },
+  {
+    "meal_name": "USDA 167516",
+    "items": [
+      {
+        "name": "Waffles, buttermilk, frozen, ready-to-heat [USDA 167516]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 273.0,
+        "protein": 6.58,
+        "carbs": 41.05,
+        "fat": 9.22
+      }
+    ],
+    "expected": {
+      "energy": 273.0,
+      "protein": 6.6,
+      "carbs": 41.0,
+      "fat": 9.2
+    },
+    "reference": {
+      "source_food_id": "167516",
+      "source_sha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
+      "source_sheet": "food.csv + food_nutrient.csv",
+      "source_row": "6"
+    }
+  },
+  {
+    "meal_name": "UK 13-145",
+    "items": [
+      {
+        "name": "Ackee, canned, drained [UK 13-145]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 151.0,
+        "protein": 2.9,
+        "carbs": 0.8,
+        "fat": 15.2
+      }
+    ],
+    "expected": {
+      "energy": 151.0,
+      "protein": 2.9,
+      "carbs": 0.8,
+      "fat": 15.2
+    },
+    "reference": {
+      "source_food_id": "13-145",
+      "source_sha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+      "source_sheet": "1.3 Proximates",
+      "source_row": "4"
+    }
+  },
+  {
+    "meal_name": "UK 13-148",
+    "items": [
+      {
+        "name": "Alfalfa sprouts, raw [UK 13-148]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 24.0,
+        "protein": 4.0,
+        "carbs": 0.4,
+        "fat": 0.7
+      }
+    ],
+    "expected": {
+      "energy": 24.0,
+      "protein": 4.0,
+      "carbs": 0.4,
+      "fat": 0.7
+    },
+    "reference": {
+      "source_food_id": "13-148",
+      "source_sha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+      "source_sheet": "1.3 Proximates",
+      "source_row": "7"
+    }
+  },
+  {
+    "meal_name": "UK 14-870",
+    "items": [
+      {
+        "name": "Almonds, flaked and ground [UK 14-870]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 612.0,
+        "protein": 21.1,
+        "carbs": 6.9,
+        "fat": 55.8
+      }
+    ],
+    "expected": {
+      "energy": 612.0,
+      "protein": 21.1,
+      "carbs": 6.9,
+      "fat": 55.8
+    },
+    "reference": {
+      "source_food_id": "14-870",
+      "source_sha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+      "source_sheet": "1.3 Proximates",
+      "source_row": "9"
+    }
+  },
+  {
+    "meal_name": "UK 14-897",
+    "items": [
+      {
+        "name": "Almonds, toasted [UK 14-897]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 579.0,
+        "protein": 21.0,
+        "carbs": 5.9,
+        "fat": 52.5
+      }
+    ],
+    "expected": {
+      "energy": 579.0,
+      "protein": 21.0,
+      "carbs": 5.9,
+      "fat": 52.5
+    },
+    "reference": {
+      "source_food_id": "14-897",
+      "source_sha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+      "source_sheet": "1.3 Proximates",
+      "source_row": "10"
+    }
+  },
+  {
+    "meal_name": "UK 14-898",
+    "items": [
+      {
+        "name": "Almonds, weighed with shells [UK 14-898]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 205.0,
+        "protein": 7.8,
+        "carbs": 1.9,
+        "fat": 18.5
+      }
+    ],
+    "expected": {
+      "energy": 205.0,
+      "protein": 7.8,
+      "carbs": 1.9,
+      "fat": 18.5
+    },
+    "reference": {
+      "source_food_id": "14-898",
+      "source_sha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+      "source_sheet": "1.3 Proximates",
+      "source_row": "11"
+    }
+  },
+  {
+    "meal_name": "AU F002258",
+    "items": [
+      {
+        "name": "Cardamom seed, dried, ground [AU F002258]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 295.411089866157,
+        "protein": 10.8,
+        "carbs": 34.4,
+        "fat": 6.7
+      }
+    ],
+    "expected": {
+      "energy": 295.4,
+      "protein": 10.8,
+      "carbs": 34.4,
+      "fat": 6.7
+    },
+    "reference": {
+      "source_food_id": "F002258",
+      "source_sha256": "14cb3e73dbf58987b440e6299624c0fefd7a4e61591fc1f753995d9534e0efc9",
+      "source_sheet": "All solids & liquids per 100 g",
+      "source_row": "4"
+    }
+  },
+  {
+    "meal_name": "AU F002963",
+    "items": [
+      {
+        "name": "Cinnamon, dried, ground [AU F002963]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 239.961759082218,
+        "protein": 4.0,
+        "carbs": 27.5,
+        "fat": 1.2
+      }
+    ],
+    "expected": {
+      "energy": 240.0,
+      "protein": 4.0,
+      "carbs": 27.5,
+      "fat": 1.2
+    },
+    "reference": {
+      "source_food_id": "F002963",
+      "source_sha256": "14cb3e73dbf58987b440e6299624c0fefd7a4e61591fc1f753995d9534e0efc9",
+      "source_sheet": "All solids & liquids per 100 g",
+      "source_row": "5"
+    }
+  },
+  {
+    "meal_name": "AU F002893",
+    "items": [
+      {
+        "name": "Chilli (chili), dried, ground [AU F002893]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 292.543021032505,
+        "protein": 12.3,
+        "carbs": 12.9,
+        "fat": 14.3
+      }
+    ],
+    "expected": {
+      "energy": 292.5,
+      "protein": 12.3,
+      "carbs": 12.9,
+      "fat": 14.3
+    },
+    "reference": {
+      "source_food_id": "F002893",
+      "source_sha256": "14cb3e73dbf58987b440e6299624c0fefd7a4e61591fc1f753995d9534e0efc9",
+      "source_sheet": "All solids & liquids per 100 g",
+      "source_row": "6"
+    }
+  },
+  {
+    "meal_name": "AU F002970",
+    "items": [
+      {
+        "name": "Cloves, dried, ground [AU F002970]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 331.97896749522,
+        "protein": 6.0,
+        "carbs": 31.6,
+        "fat": 13.0
+      }
+    ],
+    "expected": {
+      "energy": 332.0,
+      "protein": 6.0,
+      "carbs": 31.6,
+      "fat": 13.0
+    },
+    "reference": {
+      "source_food_id": "F002970",
+      "source_sha256": "14cb3e73dbf58987b440e6299624c0fefd7a4e61591fc1f753995d9534e0efc9",
+      "source_sheet": "All solids & liquids per 100 g",
+      "source_row": "7"
+    }
+  },
+  {
+    "meal_name": "AU F003190",
+    "items": [
+      {
+        "name": "Coriander seed, dried, ground [AU F003190]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 321.223709369025,
+        "protein": 12.4,
+        "carbs": 8.4,
+        "fat": 17.8
+      }
+    ],
+    "expected": {
+      "energy": 321.2,
+      "protein": 12.4,
+      "carbs": 8.4,
+      "fat": 17.8
+    },
+    "reference": {
+      "source_food_id": "F003190",
+      "source_sha256": "14cb3e73dbf58987b440e6299624c0fefd7a4e61591fc1f753995d9534e0efc9",
+      "source_sheet": "All solids & liquids per 100 g",
+      "source_row": "8"
+    }
+  },
+  {
+    "meal_name": "CA 2",
+    "items": [
+      {
+        "name": "Cheese souffle [CA 2]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 204.0,
+        "protein": 9.54,
+        "carbs": 5.91,
+        "fat": 15.7
+      }
+    ],
+    "expected": {
+      "energy": 204.0,
+      "protein": 9.5,
+      "carbs": 5.9,
+      "fat": 15.7
+    },
+    "reference": {
+      "source_food_id": "2",
+      "source_sha256": "fb77503d88186844cc2c27b39432d755505f97a789c97fc5973a30d0cd4b0367",
+      "source_sheet": "FOOD NAME.csv + NUTRIENT AMOUNT.csv",
+      "source_row": "2"
+    }
+  },
+  {
+    "meal_name": "CA 4",
+    "items": [
+      {
+        "name": "Chop suey, with meat, canned [CA 4]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 60.0,
+        "protein": 4.07,
+        "carbs": 5.29,
+        "fat": 2.8
+      }
+    ],
+    "expected": {
+      "energy": 60.0,
+      "protein": 4.1,
+      "carbs": 5.3,
+      "fat": 2.8
+    },
+    "reference": {
+      "source_food_id": "4",
+      "source_sha256": "fb77503d88186844cc2c27b39432d755505f97a789c97fc5973a30d0cd4b0367",
+      "source_sheet": "FOOD NAME.csv + NUTRIENT AMOUNT.csv",
+      "source_row": "3"
+    }
+  },
+  {
+    "meal_name": "CA 5",
+    "items": [
+      {
+        "name": "Chinese dish, chow mein, chicken [CA 5]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 85.0,
+        "protein": 6.76,
+        "carbs": 8.29,
+        "fat": 2.8
+      }
+    ],
+    "expected": {
+      "energy": 85.0,
+      "protein": 6.8,
+      "carbs": 8.3,
+      "fat": 2.8
+    },
+    "reference": {
+      "source_food_id": "5",
+      "source_sha256": "fb77503d88186844cc2c27b39432d755505f97a789c97fc5973a30d0cd4b0367",
+      "source_sheet": "FOOD NAME.csv + NUTRIENT AMOUNT.csv",
+      "source_row": "4"
+    }
+  },
+  {
+    "meal_name": "CA 6",
+    "items": [
+      {
+        "name": "Corn fritter [CA 6]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 374.0,
+        "protein": 8.55,
+        "carbs": 38.62,
+        "fat": 21.24
+      }
+    ],
+    "expected": {
+      "energy": 374.0,
+      "protein": 8.6,
+      "carbs": 38.6,
+      "fat": 21.2
+    },
+    "reference": {
+      "source_food_id": "6",
+      "source_sha256": "fb77503d88186844cc2c27b39432d755505f97a789c97fc5973a30d0cd4b0367",
+      "source_sheet": "FOOD NAME.csv + NUTRIENT AMOUNT.csv",
+      "source_row": "5"
+    }
+  },
+  {
+    "meal_name": "CA 7",
+    "items": [
+      {
+        "name": "Beef pot roast, with browned potatoes, peas and corn [CA 7]",
+        "quantity": 100,
+        "unit": "g",
+        "preparation": "Not specified",
+        "energy": 179.0,
+        "protein": 21.29,
+        "carbs": 10.72,
+        "fat": 5.25
+      }
+    ],
+    "expected": {
+      "energy": 179.0,
+      "protein": 21.3,
+      "carbs": 10.7,
+      "fat": 5.2
+    },
+    "reference": {
+      "source_food_id": "7",
+      "source_sha256": "fb77503d88186844cc2c27b39432d755505f97a789c97fc5973a30d0cd4b0367",
+      "source_sheet": "FOOD NAME.csv + NUTRIENT AMOUNT.csv",
+      "source_row": "6"
+    }
+  }
+]

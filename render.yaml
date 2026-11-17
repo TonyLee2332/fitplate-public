@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: fitplate-public
+    runtime: python
+    region: singapore
+    plan: standard
+    numInstances: 1
+    buildCommand: bash deploy/build.sh
+    startCommand: bash deploy/start.sh
+    healthCheckPath: /_stcore/health
+    disk:
+      name: fitplate-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: DASHSCOPE_API_KEY
+        sync: false
+      - key: MODEL_STUDIO_WORKSPACE_ID
+        sync: false
+      - key: MODEL_STUDIO_REGION
+        value: cn-beijing
+      - key: FITPLATE_DATA_DIR
+        value: /var/data/fitplate
+      - key: FITPLATE_VISITOR_DAILY_REQUESTS
+        value: "30"
+      - key: FITPLATE_GLOBAL_DAILY_REQUESTS
+        value: "300"
+      - key: OMP_NUM_THREADS
+        value: "1"
+      - key: MKL_NUM_THREADS
+        value: "1"

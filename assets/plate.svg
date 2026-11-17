@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 330" role="img" aria-label="An illustrated plate with grains, greens, and vegetables">
+<defs>
+<radialGradient id="wash"><stop stop-color="#ead9c9"/><stop offset="1" stop-color="#f1eeea" stop-opacity="0"/></radialGradient>
+<linearGradient id="plate" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#e6e4e0"/></linearGradient>
+<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="12" stdDeviation="11" flood-color="#9a9185" flood-opacity=".13"/></filter>
+</defs>
+<ellipse cx="222" cy="164" rx="204" ry="151" fill="url(#wash)"/>
+<g transform="translate(217 161) rotate(-14)" filter="url(#shadow)">
+<circle r="119" fill="url(#plate)" stroke="#fff" stroke-width="4"/>
+<circle r="96" fill="#fbfaf7" stroke="#e9e5de" stroke-width="1.5"/>
+<path d="M-13-75C-60-90-90-45-79-5C-60 10-17 1-7-19Z" fill="#467252"/>
+<path d="M-57-76C-86-43-38-17-15-46C-24-76-38-87-57-76" fill="#749c64"/>
+<path d="M-79-23C-73 8-23 21-9-7C-33-46-64-54-79-23" fill="#adc581"/>
+<path d="M-51-64L-25-10M-69-24L-19-13" stroke="#d7e4ba" stroke-width="2" fill="none"/>
+<path d="M11-75C72-81 96-28 67 5C41 19 9-1 3-25Z" fill="#e5ba80"/>
+<path d="M22-63L72-32M14-45L69-11M13-25L52 0" stroke="#be8e55" stroke-width="5" stroke-linecap="round"/>
+<path d="M-60 32C-35 10 39 11 59 43C38 87-35 91-64 59Z" fill="#e8d9ab"/>
+<g stroke="#caba8f" stroke-width="3" stroke-linecap="round">
+<path d="M-38 43l6 2m9-13l5 2m11 5l6 2m11-11l5 2m10 13l6 2m-76 15l6 2m13 7l6 2m10-14l6 2m13 6l5 2m-38-7l5 1"/>
+</g>
+<circle cx="-1" cy="-39" r="15" fill="#d87750"/><circle cx="-1" cy="-39" r="10" fill="#eea17e"/>
+<circle cx="-61" cy="14" r="14" fill="#d87750"/><circle cx="-61" cy="14" r="9" fill="#eea17e"/>
+<path d="M-4-49l3 6 5-5M-66 8l5 5 4-5" stroke="#faf0d8" stroke-width="2" fill="none"/>
+</g>
+<path d="M56 99v68m-10-69v30q10 19 20 0V98m-10 66v71" fill="none" stroke="#92938f" stroke-width="5" stroke-linecap="round"/>
+<path d="M376 98q-22 33-8 65h8v72M376 98v67" fill="none" stroke="#92938f" stroke-width="5" stroke-linecap="round"/>
+<g fill="#ffffff" stroke="#eee9e1"><rect x="272" y="25" width="124" height="37" rx="18"/><rect x="30" y="257" width="127" height="37" rx="18"/></g>
+<circle cx="291" cy="44" r="4" fill="#b2967c"/><text x="303" y="48" fill="#656560" font-family="Arial,sans-serif" font-size="11">A little balance.</text>
+<circle cx="48" cy="276" r="4" fill="#b9a18c"/><text x="60" y="280" fill="#656560" font-family="Arial,sans-serif" font-size="11">A little intention.</text>
+</svg>
+
