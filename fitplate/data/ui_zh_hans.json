@@ -1143,5 +1143,10 @@
   "Recording:": "录音中：",
   "Sending recording for transcription...": "正在发送录音进行转写……",
   "The recording payload is invalid. Please record again.": "录音数据无效，请重新录音。",
-  "This recording could not be decoded. Use an audio recording of up to 60 seconds.": "无法解码此录音，请使用不超过 60 秒的有效录音。"
+  "This recording could not be decoded. Use an audio recording of up to 60 seconds.": "无法解码此录音，请使用不超过 60 秒的有效录音。",
+  "The microphone permission request is still waiting. Check the browser permission prompt, or cancel and type your meal.": "仍在等待麦克风授权。请检查浏览器权限提示，或取消录音并输入文字。",
+  "Recording is unavailable in this browser. Open this HTTPS page in Safari or Chrome.": "此浏览器不支持录音，请使用 Safari 或 Chrome 打开此 HTTPS 页面。",
+  "Microphone access was denied. Allow it in the browser site settings, or type your meal.": "麦克风权限被拒绝。请在浏览器网站设置中允许访问，或输入文字。",
+  "No microphone was found. Connect a microphone or type your meal.": "未找到麦克风，请连接麦克风或输入文字。",
+  "Recording could not start. Close other recording apps, or try Safari or Chrome.": "无法开始录音。请关闭其他录音应用，或使用 Safari 或 Chrome 重试。"
 }

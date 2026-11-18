@@ -1,4 +1,4 @@
-"""User-initiated, codec-aware recording with an upload fallback."""
+"""User-initiated, codec-aware recording inside the chat composer."""
 import base64
 import binascii
 from pathlib import Path
@@ -6,14 +6,14 @@ import streamlit as st
 from fitplate.i18n import tr
 
 LABELS = {
- 'record':'Record voice','stop':'Stop recording','upload':'Upload recording','use':'Use recording',
+ 'record':'Record voice','stop':'Stop recording','use':'Use recording',
  'review':'Listen to the recording, then use it to transcribe.',
  'permission':'Allow microphone access in your browser to start recording.',
- 'pending':'The microphone permission request is still waiting. Check the browser permission prompt, or upload a recording.',
- 'unsupported':'Recording is unavailable in this browser. Open this HTTPS page in Safari or Chrome, or upload a recording.',
- 'denied':'Microphone access was denied. Allow it in the browser site settings, or upload a recording.',
- 'missing':'No microphone was found. Connect a microphone or upload a recording.',
- 'failed':'Recording could not start. Close other recording apps, try Safari or Chrome, or upload a recording.',
+ 'pending':'The microphone permission request is still waiting. Check the browser permission prompt, or cancel and type your meal.',
+ 'unsupported':'Recording is unavailable in this browser. Open this HTTPS page in Safari or Chrome.',
+ 'denied':'Microphone access was denied. Allow it in the browser site settings, or type your meal.',
+ 'missing':'No microphone was found. Connect a microphone or type your meal.',
+ 'failed':'Recording could not start. Close other recording apps, or try Safari or Chrome.',
  'invalid':'Choose a non-empty recording smaller than 10 MB and up to 60 seconds.',
  'recording':'Recording:','sending':'Sending recording for transcription...'
 }

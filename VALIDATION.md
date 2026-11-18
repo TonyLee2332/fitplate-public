@@ -25,3 +25,8 @@ Mobile/coarse-pointer form inputs, comboboxes, date segments, editable fields an
 ## Recording icon restoration (18 November 2026)
 
 The recording start control displays a compact inline SVG microphone instead of a visible text label. Localized aria-label/title and the 44 px touch target remain. All six recorder simulations passed. A 390 x 844 browser view confirmed the icon renders. Recording behavior, permissions and transcription were unchanged.
+
+
+## Inline microphone and simplified controls (18 November 2026)
+
+The dedicated Upload recording button was removed. The microphone and stop/cancel controls now attach inside the native chat input beside Send; a scoped style reserves text space without changing the native file attachment or Send handlers. On unmount, the observer, microphone stream and inserted controls are cleaned up. Permission failures suggest browser settings or text input. Six recorder simulations and 40 voice/application tests passed. Browser verification at 390 x 844 confirmed the microphone is inside the chat input, has a 44 px touch target, and no Upload recording button exists. Navigating away and back restored exactly one microphone. Physical phone capture and Render deployment still require verification.

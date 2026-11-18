@@ -428,3 +428,12 @@ button[kind="primary"]:disabled {
   line-height:1.5 !important;
  }
 }
+
+
+/* The custom recorder shares the native composer instead of a second toolbar. */
+[data-testid="stChatInput"].fitplate-has-mic {position:relative;}
+[data-testid="stChatInput"].fitplate-has-mic textarea {padding-right:96px !important;}
+.fitplate-inline-mic[hidden] {display:none !important;}
+.fitplate-inline-mic:not([hidden]) {display:inline-flex;}
+.fitplate-inline-mic:hover {background:#ffffff66 !important;}
+.fitplate-inline-mic:focus-visible {outline:2px solid #8b7958;outline-offset:-2px;}
