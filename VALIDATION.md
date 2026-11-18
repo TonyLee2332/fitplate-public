@@ -20,3 +20,8 @@ Mobile/coarse-pointer form inputs, comboboxes, date segments, editable fields an
 ## Mobile voice input correction (18 November 2026)
 
 379 Python tests and 204 subtests passed in 41.93 seconds; pip check passed. Six JavaScript simulations covered unavailable APIs, denied permission, missing device, Safari MP4 and Chrome WebM recording lifecycles. Actual M4A/WebM/Ogg/FLAC conversion passed. The configured ASR returned the expected transcript from a synthetic M4A sample; the local browser upload/preview/use flow visibly prefilled it into chat. No physical microphone was recorded. Real phone capture/permission and Linux Render acceptance remain pending; a denied browser permission cannot be bypassed by application code.
+
+
+## Recording icon restoration (18 November 2026)
+
+The recording start control displays a compact inline SVG microphone instead of a visible text label. Localized aria-label/title and the 44 px touch target remain. All six recorder simulations passed. A 390 x 844 browser view confirmed the icon renders. Recording behavior, permissions and transcription were unchanged.

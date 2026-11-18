@@ -4,6 +4,11 @@ export default function({parentElement, data, setTriggerValue}) {
     const row=document.createElement('div');row.style.cssText='display:flex;gap:8px;flex-wrap:wrap;align-items:center';
     const button=(label)=>{const b=document.createElement('button');b.type='button';b.textContent=label;b.style.cssText='font:16px system-ui;padding:9px 13px;border:1px solid #d7d5ce;border-radius:10px;background:#ffffff88;color:#454640;min-height:44px;cursor:pointer';row.append(b);return b;};
     const start=button(data.record), stop=button(data.stop), upload=button(data.upload), use=button(data.use);
+    start.textContent='';
+    start.setAttribute('aria-label',data.record);
+    start.setAttribute('title',data.record);
+    start.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg>';
+    start.style.cssText+=';width:44px;padding:10px;display:inline-flex;align-items:center;justify-content:center;color:#747779';
     stop.hidden=true;use.hidden=true;
     const status=document.createElement('div');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
     const preview=document.createElement('audio');preview.controls=true;preview.setAttribute('playsinline','');preview.hidden=true;preview.style.cssText='width:100%;margin-top:8px';
