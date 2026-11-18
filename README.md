@@ -13,6 +13,9 @@ Set administrator AI credentials in Render Environment. Visitors do not register
 
 The optional `render.yaml` Blueprint describes the same configuration. Use either manual creation or the Blueprint, not both. Apply service configuration in Render before sharing the public URL.
 
-Photos are decoded by content, corrected for orientation and converted to a metadata-free JPEG before AI, preview and depth processing. JPEG/JFIF, PNG, HEIC/HEIF, AVIF, WebP, GIF (first frame), TIFF, BMP and other installed Pillow image decoders are supported. Uploads are bounded at 20 MB and 80 megapixels; arbitrary RAW, SVG, PDF or damaged files are not guaranteed to decode. WAV/MP3 voice attachments retain the transcription service limits.
+Photos are decoded by content, corrected for orientation and converted to a metadata-free JPEG before AI, preview and depth processing. JPEG/JFIF, PNG, HEIC/HEIF, AVIF, WebP, GIF (first frame), TIFF, BMP and other installed Pillow image decoders are supported. Uploads are bounded at 20 MB and 80 megapixels; arbitrary RAW, SVG, PDF or damaged files are not guaranteed to decode. Mobile audio including M4A/MP4, WebM and Ogg is normalized to WAV before transcription.
 
 FitPlate imposes no daily AI allowance, even if historical daily-limit environment variables remain set. Two simultaneous public AI requests and one photo decode are permitted to protect availability. Provider billing and provider-side restrictions still apply.
+
+
+Use Record voice, allow microphone access, stop, preview and choose Use recording. If recording is unavailable in an embedded browser or permission was denied, open the HTTPS site in Safari/Chrome or use Upload recording. The site cannot override browser/OS microphone permissions. Recordings must be at most 60 seconds and 10 MiB. FFmpeg is bundled through imageio-ffmpeg; no separate system package is needed.

@@ -190,6 +190,11 @@ class ModelClient:
     def transcribe(self, data, filename):
         if not data or len(data) > MAX_UPLOAD_BYTES:
             raise ServiceError('Choose an audio file smaller than 10 MB.')
+        from fitplate.audio_upload import normalize_mobile_audio
+        try:
+            data, filename = normalize_mobile_audio(data, filename)
+        except ValueError as error:
+            raise ServiceError(str(error)) from None
         extension = Path(filename).suffix.lower()
         if extension not in ('.wav', '.mp3'):
             raise ServiceError('Use a WAV or MP3 file, or record a meal note in the app.')

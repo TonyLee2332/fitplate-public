@@ -1128,5 +1128,20 @@
   "This photo exceeds 80 megapixels. Export a lower-resolution copy.": "照片超过 8000 万像素，请导出较低分辨率的副本。",
   "This photo exceeds the supported resolution. Export a lower-resolution copy.": "照片超过支持的分辨率，请导出较低分辨率的副本。",
   "There is not enough server memory to decode this photo. Export a lower-resolution copy.": "服务器内存不足以解码这张照片，请导出较低分辨率的副本。",
-  "This image is damaged or its format cannot be decoded. Export it as JPEG, PNG, WebP, HEIC or AVIF and try again.": "图片已损坏或格式无法解码，请导出为 JPEG、PNG、WebP、HEIC 或 AVIF 后重试。"
+  "This image is damaged or its format cannot be decoded. Export it as JPEG, PNG, WebP, HEIC or AVIF and try again.": "图片已损坏或格式无法解码，请导出为 JPEG、PNG、WebP、HEIC 或 AVIF 后重试。",
+  "Record voice": "录音",
+  "Upload recording": "上传录音",
+  "Use recording": "使用录音",
+  "Listen to the recording, then use it to transcribe.": "请先试听录音，再点击使用录音进行转写。",
+  "Allow microphone access in your browser to start recording.": "请在浏览器中允许麦克风权限以开始录音。",
+  "The microphone permission request is still waiting. Check the browser permission prompt, or upload a recording.": "仍在等待麦克风授权。请检查浏览器权限提示，或上传录音。",
+  "Recording is unavailable in this browser. Open this HTTPS page in Safari or Chrome, or upload a recording.": "此浏览器不支持录音。请使用 Safari 或 Chrome 打开此 HTTPS 页面，或上传录音。",
+  "Microphone access was denied. Allow it in the browser site settings, or upload a recording.": "麦克风权限被拒绝。请在浏览器网站设置中允许访问，或上传录音。",
+  "No microphone was found. Connect a microphone or upload a recording.": "未找到麦克风。请连接麦克风或上传录音。",
+  "Recording could not start. Close other recording apps, try Safari or Chrome, or upload a recording.": "无法开始录音。请关闭其他录音应用，使用 Safari 或 Chrome 重试，或上传录音。",
+  "Choose a non-empty recording smaller than 10 MB and up to 60 seconds.": "请选择非空、小于 10 MB 且不超过 60 秒的录音。",
+  "Recording:": "录音中：",
+  "Sending recording for transcription...": "正在发送录音进行转写……",
+  "The recording payload is invalid. Please record again.": "录音数据无效，请重新录音。",
+  "This recording could not be decoded. Use an audio recording of up to 60 seconds.": "无法解码此录音，请使用不超过 60 秒的有效录音。"
 }

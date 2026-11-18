@@ -9,6 +9,8 @@ from datetime import date
 from pathlib import Path
 
 from fitplate.photo_upload import normalize_photo, PhotoError, MAX_PHOTO_BYTES
+from fitplate.audio_upload import AUDIO_SUFFIXES
+from fitplate.voice_input import voice_input
 from fitplate.ui import st
 import streamlit as native_st
 from fitplate.i18n import tr,language,LANGUAGES,localize_framework_controls,has_english_prose
@@ -435,7 +437,7 @@ def process_media(media):
     """Process only an explicit submission or retry, never a normal rerun."""
     data, name, text = media["data"], media["name"], media["text"]
     suffix = Path(name).suffix.lower()
-    source = "Voice" if suffix in (".wav", ".mp3") else "Photo"
+    source = media.get("source") or ("Voice" if suffix in AUDIO_SUFFIXES else "Photo")
     digest = hashlib.sha256(source.encode() + data).hexdigest()
     st.session_state.ai_error = ""
     if source == "Photo":
@@ -492,7 +494,7 @@ def submit_message(submission):
             st.session_state.ai_error = "Choose an attachment smaller than 20 MB."
             st.session_state.composer_prefill = text
             return
-        media = {"name": upload.name, "data": data, "text": text}
+        media = {"name": upload.name, "data": data, "text": text, "source": "Voice" if recording is not None else ("Voice" if Path(upload.name).suffix.lower() in AUDIO_SUFFIXES else "Photo")}
         st.session_state.pending_media = media
         if process_media(media):
             st.session_state.pending_media = None
@@ -536,9 +538,11 @@ def composer():
         submission = st.chat_input(
             "Describe a meal, attach a photo, or record a note...", key="meal_composer",
             accept_file=True, file_type=None,
-            accept_audio=True, audio_sample_rate=16000, max_chars=4000, max_upload_size=20,
+            accept_audio=False, max_chars=4000, max_upload_size=20,
             submit_mode="disable", disabled=pending is not None,
         )
+        if pending is None:
+            voice_input(process_media)
         if submission is not None:
             submit_message(submission)
             st.rerun()

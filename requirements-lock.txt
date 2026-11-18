@@ -59,3 +59,5 @@ watchdog==7.1.0
 websockets==17.4
 
 pillow-heif==1.8.1
+
+imageio-ffmpeg==0.8.1

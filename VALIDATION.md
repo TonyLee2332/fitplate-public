@@ -15,3 +15,8 @@ Regression run: 368 tests and 204 subtests passed in 53.20 seconds; pip check pa
 ## Mobile focus zoom correction (18 November 2026)
 
 Mobile/coarse-pointer form inputs, comboboxes, date segments, editable fields and portalled options use 16 px text. Desktop fine-pointer inputs retain 14 px. No viewport zoom restrictions, touch-event interception or forced scale reset were introduced. A 390 x 844 browser check confirmed 16 px controls and working navigation/language menus; the desktop energy input remained 14 px. All six application smoke tests passed. Physical iOS Safari auto-zoom still requires a phone check; desktop emulation does not reproduce every Safari behavior.
+
+
+## Mobile voice input correction (18 November 2026)
+
+379 Python tests and 204 subtests passed in 41.93 seconds; pip check passed. Six JavaScript simulations covered unavailable APIs, denied permission, missing device, Safari MP4 and Chrome WebM recording lifecycles. Actual M4A/WebM/Ogg/FLAC conversion passed. The configured ASR returned the expected transcript from a synthetic M4A sample; the local browser upload/preview/use flow visibly prefilled it into chat. No physical microphone was recorded. Real phone capture/permission and Linux Render acceptance remain pending; a denied browser permission cannot be bypassed by application code.
