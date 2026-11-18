@@ -43,27 +43,28 @@ def test_signing_key_is_retained_across_calls():
     assert visitors.validate_token(token)
 
 
-def test_per_visitor_and_global_limits(monkeypatch):
-    monkeypatch.setenv('FITPLATE_VISITOR_DAILY_REQUESTS','2')
-    monkeypatch.setenv('FITPLATE_GLOBAL_DAILY_REQUESTS','3')
-    consume_request('a');consume_request('a')
-    with pytest.raises(ServiceError,match='Your daily'):consume_request('a')
-    consume_request('b')
-    with pytest.raises(ServiceError,match='shared AI service'):consume_request('c')
-    consume_request('a','2099-01-01')
+def test_no_daily_allowance_even_with_legacy_environment(monkeypatch):
+    monkeypatch.setenv('FITPLATE_VISITOR_DAILY_REQUESTS','1')
+    monkeypatch.setenv('FITPLATE_GLOBAL_DAILY_REQUESTS','1')
+    for i in range(500):
+        consume_request('same-visitor')
+    from fitplate import usage_guard
+    token=visitors.create_token()
+    visitors.activate(token)
+    for i in range(350):
+        with usage_guard.request_slot():
+            pass
+    assert not (visitors.data_root()/'ai_usage.sqlite3').exists()
 
 
-def test_quota_is_atomic_across_threads(monkeypatch):
-    monkeypatch.setenv('FITPLATE_VISITOR_DAILY_REQUESTS','100')
-    monkeypatch.setenv('FITPLATE_GLOBAL_DAILY_REQUESTS','5')
-    def call(i):
-        try:consume_request(str(i));return True
-        except ServiceError:return False
-    with ThreadPoolExecutor(max_workers=4) as executor:
-        assert sum(executor.map(call,range(12)))==5
-
-
-def test_invalid_limit_does_not_disable_budgets(monkeypatch):
-    from fitplate.usage_guard import limit
-    monkeypatch.setenv('LIMIT_TEST','0');assert limit('LIMIT_TEST',30)==30
-    monkeypatch.setenv('LIMIT_TEST','bad');assert limit('LIMIT_TEST',30)==30
+def test_request_slot_released_on_error():
+    from fitplate.usage_guard import request_slot, _slots
+    visitors.activate(visitors.create_token())
+    with pytest.raises(RuntimeError):
+        with request_slot():
+            raise RuntimeError('test')
+    with request_slot():
+        with request_slot():
+            with pytest.raises(ServiceError,match='busy'):
+                with request_slot():
+                    pass

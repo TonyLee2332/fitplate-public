@@ -120,22 +120,24 @@ def test_audio_uses_actual_sample_rate_and_returns_transcript(monkeypatch):
         client.transcribe(b'bad', 'note.m4a')
 
 
-def test_unified_photo_submission_preserves_caption_and_does_not_repeat(monkeypatch):
+@pytest.mark.parametrize('format,extension,mime', [('PNG','png','image/png'),('JPEG','JPEG','image/jpeg'),('WEBP','webp','image/webp'),('HEIF','heic','image/heic'),('AVIF','avif','image/avif'),('TIFF','tiff','image/tiff')])
+def test_unified_photo_submission_preserves_caption_and_does_not_repeat(monkeypatch,format,extension,mime):
     from pathlib import Path
     from streamlit.testing.v1 import AppTest
 
     app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py')).run()
     image = io.BytesIO()
-    Image.new('RGB', (40, 40), 'red').save(image, 'PNG')
+    Image.new('RGB', (40, 40), 'red').save(image, format)
     image.name = 'test.png'
     respond = Mock(return_value={'intent': 'meal', 'reply': 'Review your draft.', 'draft': fresh_draft(), 'usage': []})
     monkeypatch.setattr(agent, 'respond', respond)
     assert respond.call_count == 0
-    app.chat_input[0].upload('meal.png', image.getvalue(), 'image/png').set_value('My lunch, without sauce').run()
+    app.chat_input[0].upload('meal.'+extension, image.getvalue(), mime).set_value('My lunch, without sauce').run()
     assert not app.exception
     assert respond.call_count == 1
     assert respond.call_args.args[0] == 'My lunch, without sauce'
-    assert respond.call_args.kwargs['image'] == image.getvalue()
+    from fitplate.photo_upload import normalize_photo
+    assert respond.call_args.kwargs['image'] == normalize_photo(image.getvalue())
     app.run()
     assert respond.call_count == 1
 

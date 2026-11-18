@@ -47,8 +47,6 @@ Paid compute alone does not preserve filesystem changes. If the creation page do
 | MODEL_STUDIO_WORKSPACE_ID | Existing workspace ID, without URL or domain |
 | MODEL_STUDIO_REGION | Matching region, currently cn-beijing |
 | FITPLATE_DATA_DIR | /var/data/fitplate |
-| FITPLATE_VISITOR_DAILY_REQUESTS | 30 |
-| FITPLATE_GLOBAL_DAILY_REQUESTS | 300 |
 | OMP_NUM_THREADS | 1 |
 | MKL_NUM_THREADS | 1 |
 
@@ -80,7 +78,7 @@ The real Linux build, disk, service permissions and capacity are confirmed by th
 
 ## 7. Sharing, updates and backups
 
-After acceptance, anyone with the public URL can use the app. Your provider account funds shared AI requests; daily request budgets are not currency spending caps or complete bot protection.
+After acceptance, anyone with the public URL can use the app. Your provider account funds shared AI requests; FitPlate does not impose per-visitor or global daily AI allowances. Concurrent requests remain bounded to protect service availability. Provider-side account restrictions still apply.
 
 Keep the hostname stable. Moving to a custom domain changes browser storage origin; anonymous records do not automatically follow the visitor. Export/import meals when changing origin.
 

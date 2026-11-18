@@ -21,10 +21,6 @@ services:
         value: cn-beijing
       - key: FITPLATE_DATA_DIR
         value: /var/data/fitplate
-      - key: FITPLATE_VISITOR_DAILY_REQUESTS
-        value: "30"
-      - key: FITPLATE_GLOBAL_DAILY_REQUESTS
-        value: "300"
       - key: OMP_NUM_THREADS
         value: "1"
       - key: MKL_NUM_THREADS

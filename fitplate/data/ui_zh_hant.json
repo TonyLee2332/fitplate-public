@@ -1120,5 +1120,13 @@
   "Browser storage is unavailable. Export your meals before closing this page; this workspace will not reopen automatically.": "瀏覽器儲存不可用。關閉頁面前請匯出餐點；此空間無法自動恢復。",
   "Your daily AI allowance has been reached. You can still edit meals and use local calculations.": "你今天的 AI 使用額度已用完，仍可編輯餐點並使用本機計算。",
   "The shared AI service has reached its daily allowance. Please try again tomorrow; local calculations remain available.": "共用 AI 服務今天的額度已用完。請明天再試；本機計算仍可使用。",
-  "The shared AI service is busy. Please try again shortly.": "共用 AI 服務正忙，請稍後重試。"
+  "The shared AI service is busy. Please try again shortly.": "共用 AI 服務正忙，請稍後重試。",
+  "The image file is empty. Choose another photo.": "圖片檔案為空，請選擇另一張照片。",
+  "This image exceeds the 20 MB upload limit. Export a smaller copy.": "圖片超過 20 MB 上傳上限，請匯出較小的副本。",
+  "Choose an attachment smaller than 20 MB.": "請選擇小於 20 MB 的附件。",
+  "Another photo is being processed. Please try again shortly.": "另一張照片正在處理中，請稍後重試。",
+  "This photo exceeds 80 megapixels. Export a lower-resolution copy.": "照片超過 8000 萬像素，請匯出較低解像度的副本。",
+  "This photo exceeds the supported resolution. Export a lower-resolution copy.": "照片超過支援的解像度，請匯出較低解像度的副本。",
+  "There is not enough server memory to decode this photo. Export a lower-resolution copy.": "伺服器記憶體不足以解碼這張照片，請匯出較低解像度的副本。",
+  "This image is damaged or its format cannot be decoded. Export it as JPEG, PNG, WebP, HEIC or AVIF and try again.": "圖片已損壞或格式無法解碼，請匯出為 JPEG、PNG、WebP、HEIC 或 AVIF 後重試。"
 }

@@ -6,3 +6,5 @@ ingredient-parser-nlp==2.10.0
 
 transformers==4.57.6
 torch==2.15.0
+
+pillow-heif==1.8.1

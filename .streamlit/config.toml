@@ -10,7 +10,7 @@ font = "sans serif"
 headless = true
 address = "127.0.0.1"
 port = 8519
-maxUploadSize = 10
+maxUploadSize = 20
 runOnSave = true
 
 [browser]

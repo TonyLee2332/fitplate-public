@@ -133,19 +133,12 @@ def _post_json(config, path, payload):
 
 
 def prepare_image(data):
-    if not data or len(data) > MAX_UPLOAD_BYTES:
-        raise ServiceError('Choose a JPG or PNG image smaller than 10 MB.')
+    from fitplate.photo_upload import normalize_photo, PhotoError
     try:
-        with Image.open(io.BytesIO(data)) as image:
-            if image.format not in ('JPEG', 'PNG') or image.width * image.height > 20_000_000:
-                raise ValueError()
-            image = ImageOps.exif_transpose(image).convert('RGB')
-            image.thumbnail((1280, 1280))
-            output = io.BytesIO()
-            image.save(output, format='JPEG', quality=85)
-    except (UnidentifiedImageError, OSError, ValueError, Image.DecompressionBombError):
-        raise ServiceError('This photo could not be processed. Choose a smaller JPG or PNG image.') from None
-    return 'data:image/jpeg;base64,' + base64.b64encode(output.getvalue()).decode('ascii')
+        prepared = normalize_photo(data)
+    except PhotoError as error:
+        raise ServiceError(str(error)) from None
+    return 'data:image/jpeg;base64,' + base64.b64encode(prepared).decode('ascii')
 
 
 class ModelClient:

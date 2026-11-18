@@ -8,6 +8,7 @@ import json
 from datetime import date
 from pathlib import Path
 
+from fitplate.photo_upload import normalize_photo, PhotoError, MAX_PHOTO_BYTES
 from fitplate.ui import st
 import streamlit as native_st
 from fitplate.i18n import tr,language,LANGUAGES,localize_framework_controls,has_english_prose
@@ -434,17 +435,14 @@ def process_media(media):
     """Process only an explicit submission or retry, never a normal rerun."""
     data, name, text = media["data"], media["name"], media["text"]
     suffix = Path(name).suffix.lower()
-    source = "Photo" if suffix in (".jpg", ".jpeg", ".png") else "Voice"
+    source = "Voice" if suffix in (".wav", ".mp3") else "Photo"
     digest = hashlib.sha256(source.encode() + data).hexdigest()
     st.session_state.ai_error = ""
     if source == "Photo":
         try:
-            with Image.open(io.BytesIO(data)) as image:
-                if image.width * image.height > 20_000_000:
-                    raise ValueError()
-                image.verify()
-        except (UnidentifiedImageError, OSError, ValueError, Image.DecompressionBombError):
-            st.session_state.ai_error = "This photo could not be read. Choose a smaller JPG or PNG image."
+            data = normalize_photo(data)
+        except PhotoError as error:
+            st.session_state.ai_error = str(error)
             return False
         if st.session_state.draft is not None:
             st.session_state.ai_error = "Finish or discard your current draft before sending a new meal photo. Your attachment is kept below."
@@ -489,13 +487,9 @@ def submit_message(submission):
         return
     if uploads:
         upload = uploads[0]
-        if Path(upload.name).suffix.lower() not in (".jpg", ".jpeg", ".png", ".wav", ".mp3"):
-            st.session_state.ai_error = "Use a JPG, PNG, WAV, or MP3 attachment."
-            st.session_state.composer_prefill = text
-            return
         data = upload.getvalue()
-        if not data or len(data) > 10 * 1024 * 1024:
-            st.session_state.ai_error = "Choose an attachment smaller than 10 MB."
+        if not data or len(data) > MAX_PHOTO_BYTES:
+            st.session_state.ai_error = "Choose an attachment smaller than 20 MB."
             st.session_state.composer_prefill = text
             return
         media = {"name": upload.name, "data": data, "text": text}
@@ -541,8 +535,8 @@ def composer():
             st.session_state.composer_prefill = None
         submission = st.chat_input(
             "Describe a meal, attach a photo, or record a note...", key="meal_composer",
-            accept_file=True, file_type=["jpg", "jpeg", "png", "wav", "mp3"],
-            accept_audio=True, audio_sample_rate=16000, max_chars=4000, max_upload_size=10,
+            accept_file=True, file_type=None,
+            accept_audio=True, audio_sample_rate=16000, max_chars=4000, max_upload_size=20,
             submit_mode="disable", disabled=pending is not None,
         )
         if submission is not None:
