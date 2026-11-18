@@ -410,3 +410,21 @@ button[kind="primary"]:disabled {
  background:#e8e7e2 !important;border-color:#dcdcd5 !important;color:#85867f !important;
  box-shadow:none !important;opacity:1;
 }
+
+/* Keep focused controls readable without triggering mobile browser auto-zoom.
+   Include portalled selectors and their search inputs; preserve pinch-to-zoom. */
+@media (max-width:760px), (hover:none) and (pointer:coarse) {
+ input,
+ textarea,
+ select,
+ [role="combobox"],
+ [role="spinbutton"],
+ [contenteditable="true"],
+ [data-baseweb="select"] > div,
+ [data-baseweb="select"] span,
+ [role="listbox"],
+ [role="option"] {
+  font-size:16px !important;
+  line-height:1.5 !important;
+ }
+}
